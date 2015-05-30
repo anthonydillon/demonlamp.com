@@ -1,0 +1,9 @@
+@mixin dl-cards {
+	.card {
+		background: $white;
+		-webkit-box-shadow: 0 1px 2px 0px rgba(1, 1, 1, 0.15);
+		-moz-box-shadow: 0 1px 2px 0px rgba(1, 1, 1, 0.15);
+		box-shadow: 0 1px 2px 0px rgba(1, 1, 1, 0.15);
+		padding: $gutter-width;
+	}
+}

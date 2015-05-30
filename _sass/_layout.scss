@@ -1,112 +1,157 @@
-/**
- * Site header
- */
-.site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+@mixin dl-layout {
+    /**
+     * Site header
+     */
+    .site-header {
+        padding-top: 20px;
+        background-color: $white;
+        -webkit-box-shadow: 1px 1px 2px 0px rgba(1, 1, 1, 0.15);
+        -moz-box-shadow: 1px 1px 2px 0px rgba(1, 1, 1, 0.15);
+        box-shadow: 1px 1px 2px 0px rgba(1, 1, 1, 0.15);
 
-    // Positioning context for the mobile navigation icon
-    position: relative;
-}
-
-.site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
-
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
-}
-
-.site-nav {
-    float: right;
-    line-height: 56px;
-
-    .menu-icon {
-        display: none;
+        // Positioning context for the mobile navigation icon
+        position: relative;
     }
 
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
+    .site-title {
+        margin-bottom: 0;
 
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
+        img {
+            margin-bottom: 0;
         }
     }
 
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
+    .site-nav {
+        line-height: 36px;
 
         .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
             display: none;
         }
 
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
+        .page-link {
+            font-weight: 700;
+            color: $text-color;
+            line-height: $base-line-height;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: inline-block;
+            margin-top: -1px;
+            border-top: 1px solid transparent;
+
+            // Gaps between nav items, but not on the first one
+            &:not(:first-child) {
+                margin-left: 20px;
+            }
+
+            &:hover {
+                text-decoration: none;
+                color: lighten($brand-color, 20%);
+            }
+
+            &.active {
+                color: $brand-color;
+                border-top: 1px solid $grey-color-dark;
+            }
         }
 
-        .page-link {
-            display: block;
-            padding: 5px 10px;
+        @include media-query($on-palm) {
+            position: absolute;
+            top: 9px;
+            right: 30px;
+            background-color: $background-color;
+            border: 1px solid $grey-color-light;
+            border-radius: 5px;
+            text-align: right;
+
+            .menu-icon {
+                display: block;
+                float: right;
+                width: 36px;
+                height: 26px;
+                line-height: 0;
+                padding-top: 10px;
+                text-align: center;
+
+                > svg {
+                    width: 18px;
+                    height: 15px;
+
+                    path {
+                        fill: $grey-color-dark;
+                    }
+                }
+            }
+
+            .trigger {
+                clear: both;
+                display: none;
+            }
+
+            &:hover .trigger {
+                display: block;
+                padding-bottom: 5px;
+            }
+
+            .page-link {
+                display: block;
+                padding: 5px 10px;
+            }
         }
     }
-}
 
-/**
- * Site footer
- */
-.site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
-}
+    /**
+     * Site footer
+     */
+    .site-footer {
+        border-top: 1px solid $grey-color-light;
+        padding: $spacing-unit 0;
+        background-color: $black;
+        margin-top: $gutter-width * 2;
 
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
-}
+        .share-buttons {
+            margin-bottom: 40px;
+        }
 
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
-}
+        .addthis_default_style .addthis_separator, 
+        .addthis_default_style .at300b, 
+        .addthis_default_style .at4-icon, 
+        .addthis_default_style .at300bo, 
+        .addthis_default_style .at300m, 
+        .addthis_default_style .at300bs {
+            display: inline-block;
+            float: none;
+        }
+    }
 
-.footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    @extend %clearfix;
+    .footer-heading {
+        color: darken($white, 5%);
+        font-size: 18px;
+        margin-bottom: $spacing-unit / 2;
+    }
+
+    .contact-list,
+    .social-media-list {
+        list-style: none;
+        margin-left: 0;
+    }
+
+    .footer-col-wrapper {
+        font-size: 15px;
+        color: darken($white, 10%);
+        @extend %clearfix;
+    }
+
+    .inline-list {
+
+        li {
+            margin-right: 0;
+        }
+
+        img {
+            display: inline;
+            vertical-align: top;
+            margin-bottom: 0;
+            margin-top: 2px;
+        }
+    }
 }

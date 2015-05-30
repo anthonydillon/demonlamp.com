@@ -1,0 +1,47 @@
+.home {
+	.row-hero {
+		margin-top: $gutter-width * 2;
+		background-image: url('../img/hero-image.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-color: $black;
+		color: $white;
+
+		.intro {
+			margin-top: 230px;
+		}
+	}
+
+	.gap-at-top {
+		margin-top: 120px;
+	}
+
+	.text-strip {
+		margin-left: -20px;
+		margin-right: -20px;
+		background: $brand-color;
+		padding: 5px 20px;
+		color: $white;
+	}
+
+	.price {
+		text-align: center;
+		font-size: 2em;
+		font-weight: 400;
+	}
+
+	.button--secondary img {
+		margin-bottom: 0;
+	}
+
+	.align-right {
+		text-align: right;
+	}
+
+	.strip-white {
+		background: $white;
+        -webkit-box-shadow: 1px 1px 2px 0px rgba(1, 1, 1, 0.15);
+        -moz-box-shadow: 1px 1px 2px 0px rgba(1, 1, 1, 0.15);
+        box-shadow: 1px 1px 2px 0px rgba(1, 1, 1, 0.15);
+	}
+}
