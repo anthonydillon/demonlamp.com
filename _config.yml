@@ -3,7 +3,7 @@ title: Demon lamp
 email: info@demonlamp.com
 description: > # this means to ignore newlines until "baseurl:"
   Presenting the new Demon Lamp! Design inspired by Jamie Hewlett.
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/demonlamp.com" # the subpath of your site, e.g. /blog/
 url: "http://demonlamp.com" # the base hostname & protocol for your site
 github_username:  anthonydillon
 
