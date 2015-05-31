@@ -53,7 +53,8 @@ $on-laptop:        800px;
         "base",
         "layout",
         "rows",
-        "modules/cards"
+        "modules/cards",
+        "modules/strips"
 ;
 
 @include vanilla;
@@ -61,5 +62,6 @@ $on-laptop:        800px;
 @include dl-layout;
 @include dl-rows;
 @include dl-cards;
+@include dl-strips;
 
 @import "pages/home";
