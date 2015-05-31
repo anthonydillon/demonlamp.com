@@ -1,11 +1,15 @@
 .home {
 	.row-hero {
-		margin-top: $gutter-width * 2;
+		margin-top: 0;
 		background-image: url('../img/hero-image.png');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-color: $black;
 		color: $white;
+
+		@media only screen and (min-width: $breakpoint-medium) {
+			margin-top: $gutter-width * 2;
+		}
 
 		.intro {
 			margin-top: 230px;
@@ -32,5 +36,5 @@
 			text-align: right;
 		}
 	}
-	
+
 }
