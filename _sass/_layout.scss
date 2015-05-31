@@ -48,9 +48,10 @@
                 color: lighten($brand-color, 20%);
             }
 
-            @media only screen and (min-width: $on-palm) {
-                &.active {
-                    color: $brand-color;
+            
+            &.active {
+                color: $brand-color;
+                @media only screen and (min-width: $on-palm) {
                     border-top: 1px solid $grey-color-dark;
                 }
             }
