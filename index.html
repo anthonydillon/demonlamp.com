@@ -2,67 +2,16 @@
 layout: default
 ---
 
-<div class="home clearfix">
+{% include home.html %}
 
-  <div class="row row-hero">
-    <div class="inner-wrapper">
-      <div class="six-col prepend-six last-col">
-        <h1>Let there be light!</h1>
-      </div>
-      <div class="six-col">
-        <p class="intro">A limited run of official Gorillaz merchandise.</p>
-      </div>
-    </div>
-  </div>
+{% include buy.html %}
 
-  <div class="row">
-    <div class="inner-wrapper">
+{% include product-info.html %}
 
-      <div class="three-col gap-at-top">
-        <h2>Dimensions</h2>
-        <ul class="list">
-          <li>Width: 40cm</li>
-          <li>Height: 40cm</li>
-          <li>Depth: 23cm</li>
-          <li>Package Weight: 1.5 KG</li>
-        </ul>
-      </div>
+{% include shipping.html %}
 
-      <div class="six-col card">
-        <p>Designed and created by Jamie Hewlett and Zombie Lighting.</p>
-        <p class="text-strip">Eco friendly energy saving lamp</p>
-        <p class="price">&pound;75</p>
-        <div class="six-col">
-          <p>Choose your preferred payment method:</p>
-          <ul class="inline-list align-center">
-            <li><a href="#" class="button--secondary"><img src="{{ site.baseurl }}/img/payment-method-google.png" alt="Google checkout" /></a></li>
-            <li><a href="#" class="button--secondary"><img src="{{ site.baseurl }}/img/payment-method-paypal.png" alt="PayPal" /></a></li>
-          </ul>
-        </div>
-        <p>FREE Energy Saving Bulb supplied with a compatible unit. Please see <a href="{{ "/shipping/#exporting" | prepend: site.baseurl }}">our shipping</a> for more details. No price increases with VAT</p>
-      </div>
+{% include gallery.html %}
 
-      <div class="three-col last-col gap-at-top align-right">
-        <img src="{{ site.baseurl }}/img/credit-cards.png" alt="Excepted credit cards" /> 
-        <h2>Shipping costs</h2>
-        <ul class="list">
-          <li>UK &amp; Northern Ireland &pound;8</li>
-          <li>Europe &pound;20</li>
-          <li>International &pound;45</li>
-        </ul>
-      </div>
+{% include faq.html %}
 
-    </div>
-  </div>
-
-  <div class="row strip-white">
-    <div class="inner-wrapper">
-      <div class="twelve-col">
-        <h2>Will Demon Lamp work in my Country?</h2>
-      </div>
-      <div class="twelve-col">
-        <img src="{{ site.baseurl }}/img/world-map.gif" alt="Voltage world map" />
-      </div>
-  </div>
-
-</div>
+{% include contact.html %}

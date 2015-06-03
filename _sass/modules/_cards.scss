@@ -1,6 +1,8 @@
+
+
 @mixin dl-cards {
-	.card {
-		background: $white;
+
+	%box {
 		-webkit-box-shadow: 0 1px 2px 0px rgba(1, 1, 1, 0.15);
 		-moz-box-shadow: 0 1px 2px 0px rgba(1, 1, 1, 0.15);
 		box-shadow: 0 1px 2px 0px rgba(1, 1, 1, 0.15);
@@ -8,5 +10,15 @@
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 		padding: $gutter-width;
+	}
+
+	.card {
+		@extend %box;
+		background: $white;
+
+		&--grey {
+			@extend %box;
+			background: $grey-color-light;
+		}
 	}
 }

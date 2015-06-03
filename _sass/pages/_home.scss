@@ -5,11 +5,7 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-color: $black;
-		color: $white;
-
-		@media only screen and (min-width: $breakpoint-medium) {
-			margin-top: $gutter-width * 2;
-		}
+		color: $white;	
 
 		.intro {
 			margin-top: 230px;
@@ -24,13 +20,26 @@
 		color: $white;
 	}
 
-	.button--secondary img {
-		margin-bottom: 0;
+	.button--secondary {
+		color: $text-color;
+		font-size: 1.6em;
+
+		&:focus {
+			text-decoration: none;
+		}
+
+		img {
+			max-width: 100px;
+			margin-bottom: 0;
+			display: inline-block;
+			position: relative;
+			margin-left: 2px;
+		}
 	}
 
   	@media only screen and (min-width: $breakpoint-medium) {
 		.gap-at-top {
-			margin-top: 120px;
+			margin-top: 100px;
 		}
 		.align-right {
 			text-align: right;
