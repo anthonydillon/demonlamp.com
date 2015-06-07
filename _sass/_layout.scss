@@ -28,19 +28,18 @@
             float: left;
             margin-right: 20px;
             margin-top: 10px;
+            margin-bottom: 10px;
             width: 0;
             opacity: 0;
-            -moz-transition: all .3s;
-            -webkit-transition: all .3s;
-            transition: all .3s;
+            -moz-transform: translateX(-200px);
+            -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
 
             img {
                 max-width: 200px;
                 margin: 0;
             }
         }
-
-        
 
         .menu-icon {
             display: none;
@@ -84,14 +83,14 @@
                 width: 36px;
                 height: 26px;
                 line-height: 0;
-                padding-top: 10px;
+                padding-top: 14px;
                 text-align: center;
 
                 > svg {
                     width: 18px;
                     height: 15px;
 
-                    path {
+                    path{
                         fill: $grey-color-dark;
                     }
                 }
@@ -120,19 +119,32 @@
         }
     }
 
-    .row-nav.scrolled {
-        background: $white;
-        width: 100%;
-        position: fixed;
-        top: 0; 
-        z-index: 1000;
-        -webkit-box-shadow: 1px 1px 2px 0px rgba(1, 1, 1, 0.15);
-        -moz-box-shadow: 1px 1px 2px 0px rgba(1, 1, 1, 0.15);
-        box-shadow: 1px 1px 2px 0px rgba(1, 1, 1, 0.15);
+    .site-header.scrolled {
+        padding-bottom: 44px;
+        @include media-query($on-palm) {
+            padding-bottom: 75px;
+        }
 
-        .scroll-logo {
-            width: 200px;
-            opacity: 1;
+        .row-nav {
+            background: $white;
+            width: 100%;
+            position: fixed;
+            top: 0; 
+            z-index: 1000;
+            -webkit-box-shadow: 1px 1px 2px 0px rgba(1, 1, 1, 0.15);
+            -moz-box-shadow: 1px 1px 2px 0px rgba(1, 1, 1, 0.15);
+            box-shadow: 1px 1px 2px 0px rgba(1, 1, 1, 0.15);
+
+            .scroll-logo {
+                -moz-transition: width .2s, opacity .2s .2s;
+                -webkit-transition: width .2s, opacity .2s .2s;
+                transition: width .2s, opacity .2s .2s;
+                width: 200px;
+                opacity: 1;
+                -moz-transform: translateX(0);
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
         }
     }
 
