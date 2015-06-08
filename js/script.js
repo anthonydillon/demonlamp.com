@@ -1,17 +1,17 @@
 $(document).ready(function() {
 	var siteHeader = $('.site-header'),
-		buyRow = $('#buy').position().top,
-		productInfoRow = $('#product-info').position().top,
-		shippingRow = $('#shipping').position().top,
-		galleryRow = $('#gallery').position().top,
-		faqRow = $('#faq').position().top,
-		contactRow = $('#contact').position().top,
 		currentRow = false;
 
 	console.log(contactRow);
 
 	function checkNav() {
-		var scroll = $(document).scrollTop() + 50,
+		var scroll = $(document).scrollTop(),
+			buyRow = $('#buy').position().top,
+			productInfoRow = $('#product-info').position().top,
+			shippingRow = $('#shipping').position().top,
+			galleryRow = $('#gallery').position().top,
+			faqRow = $('#faq').position().top,
+			contactRow = $('#contact').position().top,
 			cRow = false;
 
 		if (scroll > 100) {
@@ -47,7 +47,6 @@ $(document).ready(function() {
 
 	$(document).scroll(function() {
 		checkNav();
-
 	});
 
 	checkNav();
