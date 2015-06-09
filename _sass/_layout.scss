@@ -2,15 +2,24 @@
     /**
      * Site header
      */
-    .site-header {
+
+    .site-header { 
         padding-top: 20px;
-        background-color: $white;
         -webkit-box-shadow: 1px 1px 2px 0px rgba(1, 1, 1, 0.15);
         -moz-box-shadow: 1px 1px 2px 0px rgba(1, 1, 1, 0.15);
         box-shadow: 1px 1px 2px 0px rgba(1, 1, 1, 0.15);
 
         // Positioning context for the mobile navigation icon
         position: relative;
+
+        .row-header.row {
+            padding-top: 20px;
+            background-color: $white;
+        }
+    }
+
+    .uppercase {
+        text-transform: uppercase;
     }
 
     .site-title {
@@ -19,6 +28,15 @@
         img {
             margin-bottom: 0;
         }
+    }
+
+    .align-right {
+        float: right;
+    }
+
+    .row-nav {
+        background: $white;
+        margin-bottom: $gutter-width * 2;
     }
 
     .site-nav {
@@ -52,8 +70,8 @@
             padding-top: 10px;
             padding-bottom: 10px;
             display: inline-block;
-            margin-top: -1px;
             border-top: 1px solid transparent;
+            text-transform: uppercase;
 
             // Gaps between nav items, but not on the first one
             &:not(:first-child) {
@@ -62,7 +80,7 @@
 
             &:hover {
                 text-decoration: none;
-                color: lighten($brand-color, 20%);
+                color: $brand-color;
             }
 
             
@@ -167,10 +185,22 @@
         background-color: $black;
         margin-top: $gutter-width * 2;
 
+        p {
+            font-size: 14px;
+        }
+
+        a:link,
+        a:visited {
+            color: $white;
+        }
+
         .share-buttons {
             margin-bottom: 40px;
         }
+    }
 
+    .site-footer,
+    .site-header {
         .addthis_default_style .addthis_separator, 
         .addthis_default_style .at300b, 
         .addthis_default_style .at4-icon, 

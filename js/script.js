@@ -12,7 +12,7 @@ $(document).ready(function() {
 			contactRow = $('#contact').position().top,
 			cRow = false;
 
-		if (scroll > 100) {
+		if (scroll > 150) {
 			siteHeader.addClass('scrolled');
 		} else {
 			siteHeader.removeClass('scrolled');
