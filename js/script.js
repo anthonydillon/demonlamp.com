@@ -3,7 +3,7 @@ $(document).ready(function() {
 		currentRow = false;
 
 	function checkNav() {
-		var scroll = $(document).scrollTop(),
+		var scroll = $(document).scrollTop() + 30,
 			buyRow = $('#buy').position().top,
 			productInfoRow = $('#product-info').position().top,
 			shippingRow = $('#shipping').position().top,
@@ -48,5 +48,9 @@ $(document).ready(function() {
 	});
 
 	checkNav();
+
+	setTimeout(function() {
+		checkNav();		
+	}, 500);
 
 });

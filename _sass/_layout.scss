@@ -138,9 +138,9 @@
     }
 
     .site-header.scrolled {
-        padding-bottom: 44px;
+        padding-bottom: 85px;
         @include media-query($on-palm) {
-            padding-bottom: 75px;
+            padding-bottom: 40px;
         }
 
         .row-nav {
