@@ -2,8 +2,6 @@ $(document).ready(function() {
 	var siteHeader = $('.site-header'),
 		currentRow = false;
 
-	console.log(contactRow);
-
 	function checkNav() {
 		var scroll = $(document).scrollTop(),
 			buyRow = $('#buy').position().top,
