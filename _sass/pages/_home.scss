@@ -1,20 +1,77 @@
+%slider-background {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: $black;
+	padding-top: $gutter-width;
+	padding-bottom: $gutter-width;
+	height: 430px;
+}
+
 .home {
 	.row-hero {
 		margin-top: 0;
-		background-image: url('../img/hero-image.png');
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-color: $black;
 		color: $white;
         -webkit-box-shadow: 1px 1px 2px 0px rgba(1, 1, 1, 0.15);
         -moz-box-shadow: 1px 1px 2px 0px rgba(1, 1, 1, 0.15);
         box-shadow: 1px 1px 2px 0px rgba(1, 1, 1, 0.15);
         text-transform: uppercase;
-        padding-top: $gutter-width;
-        padding-bottom: $gutter-width;
+        padding: 0;
+        overflow: hidden;
+        height: 465px;
+
+	    .slick-next { 
+	        right: 30px;
+	        background-image: url('../img/slider-arrow-right-white.png');
+	        width: 44px;
+	        height: 36px;
+	        text-indent: -3000px;
+	    }
+
+	    .slick-prev { 
+	        left: 30px;
+	        background-image: url('../img/slider-arrow-left-white.png');
+	        width: 44px;
+	        height: 36px;
+	        text-indent: -3000px;
+	    }
+
+        .inner-wrapper {
+        	position: relative;
+        	height: 100%;
+        }
 
 		.intro {
 			margin-top: 270px;
+		}
+
+		.slide-one {
+			@extend %slider-background;
+			background-image: url('../img/hero-image-1.jpg');
+		}
+
+		.slide-two {
+			@extend %slider-background;
+			background-image: url('../img/hero-image-2.jpg');
+		}
+
+		.slide-three {
+			@extend %slider-background;
+			background-image: url('../img/hero-image-3.jpg');
+		}
+
+		.slide-four {
+			@extend %slider-background;
+			background-image: url('../img/hero-image-4.jpg');
+		}
+
+		.slide-five {
+			@extend %slider-background;
+			background-image: url('../img/hero-image-5.jpg');
+			color: $brand-color;
+
+			h1 {
+				margin-top: 100px;
+			}
 		}
 	}
 

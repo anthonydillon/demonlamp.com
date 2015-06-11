@@ -50,4 +50,20 @@ $(document).ready(function() {
 		checkNav();		
 	}, 500);
 
+	$('.slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+
+    $('.slider-right a').click(function(e) {
+    	e.preventDefault();
+    });
+
+    $('.slider-left a').click(function(e) {
+    	e.preventDefault();
+    });
+
 });
