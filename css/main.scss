@@ -6,7 +6,7 @@
 
 
 // Our variables
-$base-font-family: 	'Open Sans', sans-serif;
+$base-font-family: 	'Swiss911BT-Compressed', Ariel;
 $base-font-size:   	16px;
 $small-font-size:  	$base-font-size * 0.875;
 $base-line-height: 	1.5;
@@ -17,7 +17,7 @@ $text-color:       	#111;
 $background-color: 	#f3f3f3;
 $brand-color:      	#e71212;
 
-$grey-color:       	#828282;	
+$grey-color:       	#828282;
 $grey-color-light: 	lighten($grey-color, 40%);
 $grey-color-dark:  	darken($grey-color, 25%);
 
@@ -44,6 +44,12 @@ $on-laptop:        800px;
         @content;
     }
 }
+
+// Fonts
+// Swiss911
+@import url("//hello.myfonts.net/count/2e6529");
+
+@font-face {font-family: 'Swiss911BT-Compressed';src: url('fonts/2E6529_0_0.eot');src: url('fonts/2E6529_0_0.eot?#iefix') format('embedded-opentype'),url('fonts/2E6529_0_0.woff2') format('woff2'),url('fonts/2E6529_0_0.woff') format('woff'),url('fonts/2E6529_0_0.ttf') format('truetype');}
 
 
 
