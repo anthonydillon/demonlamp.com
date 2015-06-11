@@ -5,7 +5,6 @@ $(document).ready(function() {
 	function checkNav() {
 		var scroll = $(document).scrollTop() + 30,
 			buyRow = $('#buy').position().top,
-			productInfoRow = $('#product-info').position().top,
 			shippingRow = $('#shipping').position().top,
 			galleryRow = $('#gallery').position().top,
 			faqRow = $('#faq').position().top,
@@ -26,8 +25,6 @@ $(document).ready(function() {
 			cRow = 'gallery';
 		} else if (scroll > shippingRow) {
 			cRow = 'shipping';
-		} else if (scroll > productInfoRow) {
-			cRow = 'product-info';
 		} else if (scroll > buyRow) {
 			cRow = 'buy';
 		} else {
