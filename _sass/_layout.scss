@@ -3,7 +3,7 @@
      * Site header
      */
 
-    .site-header { 
+    .site-header {
         padding-top: 20px;
         -webkit-box-shadow: 1px 1px 2px 0px rgba(1, 1, 1, 0.15);
         -moz-box-shadow: 1px 1px 2px 0px rgba(1, 1, 1, 0.15);
@@ -64,7 +64,7 @@
         }
 
         .page-link {
-            font-weight: 700;
+            font-weight: 400;
             color: $text-color;
             line-height: $base-line-height;
             padding-top: 10px;
@@ -83,7 +83,7 @@
                 color: $brand-color;
             }
 
-            
+
             &.active {
                 color: $brand-color;
                 @media only screen and (min-width: $on-palm) {
@@ -147,7 +147,7 @@
             background: $white;
             width: 100%;
             position: fixed;
-            top: 0; 
+            top: 0;
             z-index: 1000;
             -webkit-box-shadow: 1px 1px 2px 0px rgba(1, 1, 1, 0.15);
             -moz-box-shadow: 1px 1px 2px 0px rgba(1, 1, 1, 0.15);
@@ -201,11 +201,11 @@
 
     .site-footer,
     .site-header {
-        .addthis_default_style .addthis_separator, 
-        .addthis_default_style .at300b, 
-        .addthis_default_style .at4-icon, 
-        .addthis_default_style .at300bo, 
-        .addthis_default_style .at300m, 
+        .addthis_default_style .addthis_separator,
+        .addthis_default_style .at300b,
+        .addthis_default_style .at4-icon,
+        .addthis_default_style .at300bo,
+        .addthis_default_style .at300m,
         .addthis_default_style .at300bs {
             display: inline-block;
             float: none;
