@@ -60,7 +60,8 @@ $on-laptop:        800px;
         "layout",
         "rows",
         "modules/cards",
-        "modules/strips"
+        "modules/strips",
+        "modules/slick"
 ;
 
 @include vanilla;
@@ -69,5 +70,6 @@ $on-laptop:        800px;
 @include dl-rows;
 @include dl-cards;
 @include dl-strips;
+@include dl-slick;
 
 @import "pages/home";
