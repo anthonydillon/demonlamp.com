@@ -45,6 +45,8 @@
 
     .site-nav {
         line-height: 36px;
+        font-family: $secondary-font-family;
+        letter-spacing: .03em;
 
         .scroll-logo {
             float: left;
@@ -168,20 +170,6 @@
                 transform: translateX(0);
             }
         }
-    }
-
-    .slick-next { 
-        right: 30px;
-        background-image: url('../img/slider-arrow-right-white.png');
-        width: 44px;
-        height: 36px;
-    }
-
-    .slick-prev { 
-        left: 30px;
-        background-image: url('../img/slider-arrow-left-white.png');
-        width: 44px;
-        height: 36px;
     }
 
 
@@ -321,6 +309,8 @@
     .faq {
 
         dt {
+            font-family: $secondary-font-family;
+            letter-spacing: .03em;
             font-size: 1.6em;
             font-weight: 300;
             margin-bottom: .3em;

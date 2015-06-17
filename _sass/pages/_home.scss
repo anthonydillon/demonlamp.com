@@ -1,15 +1,21 @@
 %slider-background {
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 	background-color: $black;
 	padding-top: $gutter-width;
 	padding-bottom: $gutter-width;
 	height: 430px;
+
+	@media only screen and (max-width: $breakpoint-medium) {
+		padding: 20px;
+	}
 }
 
 .home {
 	.row-hero {
-		margin-top: 0;
+		font-family: $secondary-font-family;
+        letter-spacing: .03em;
 		color: $white;
         -webkit-box-shadow: 1px 1px 2px 0px rgba(1, 1, 1, 0.15);
         -moz-box-shadow: 1px 1px 2px 0px rgba(1, 1, 1, 0.15);
@@ -17,7 +23,9 @@
         text-transform: uppercase;
         padding: 0;
         overflow: hidden;
-        height: 465px;
+        height: 465px;  
+        max-width: 1200px;
+  		margin: 0 auto;
 
 	    .slick-next { 
 	        right: 30px;
@@ -25,6 +33,10 @@
 	        width: 44px;
 	        height: 36px;
 	        text-indent: -3000px;
+
+	        &:before {
+	        	display: none;
+	        }
 	    }
 
 	    .slick-prev { 
@@ -33,6 +45,10 @@
 	        width: 44px;
 	        height: 36px;
 	        text-indent: -3000px;
+	        
+	        &:before {
+	        	display: none;
+	        }
 	    }
 
         .inner-wrapper {
