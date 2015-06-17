@@ -50,7 +50,7 @@
 
         .scroll-logo {
             float: left;
-            margin-right: 20px;
+            margin-right: 60px;
             margin-top: 10px;
             margin-bottom: 10px;
             width: 0;
@@ -78,10 +78,11 @@
             display: inline-block;
             border-top: 1px solid transparent;
             text-transform: uppercase;
+            margin-left: 80px;
 
             // Gaps between nav items, but not on the first one
-            &:not(:first-child) {
-                margin-left: 20px;
+            &.first {
+                margin-left: 0;
             }
 
             &:hover {
@@ -217,6 +218,8 @@
         padding: $spacing-unit 0;
         background-color: $black;
         margin-top: $gutter-width * 2;
+        font-family: $secondary-font-family;
+        letter-spacing: .03em;
 
         p {
             font-size: 14px;
