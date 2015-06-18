@@ -46,7 +46,6 @@
     .site-nav {
         line-height: 36px;
         font-family: $secondary-font-family;
-        letter-spacing: .03em;
 
         .scroll-logo {
             float: left;
@@ -69,6 +68,10 @@
             display: none;
         }
 
+        .trigger {
+          display: flex;
+        }
+
         .page-link {
             font-weight: 400;
             color: $text-color;
@@ -79,6 +82,8 @@
             border-top: 1px solid transparent;
             text-transform: uppercase;
             margin-left: 80px;
+            flex-grow: 1;
+            text-align: center;
 
             // Gaps between nav items, but not on the first one
             &.first {
@@ -88,6 +93,9 @@
             &:hover {
                 text-decoration: none;
                 color: $brand-color;
+                @media only screen and (min-width: $on-palm) {
+                    border-top: 1px solid $grey-color-dark;
+                }
             }
 
 
@@ -218,8 +226,10 @@
         padding: $spacing-unit 0;
         background-color: $black;
         margin-top: $gutter-width * 2;
-        font-family: $secondary-font-family;
-        letter-spacing: .03em;
+
+        strong {
+          font-family: $secondary-font-family;
+        }
 
         p {
             font-size: 14px;
@@ -290,12 +300,6 @@
         font-weight: 400;
     }
 
-    .price-left {
-        text-align: left;
-        font-size: 2em;
-        font-weight: 400;
-    }
-
     .sold-out {
         .sold-out__title {
             color: $brand-color;
@@ -319,7 +323,6 @@
 
         dt {
             font-family: $secondary-font-family;
-            letter-spacing: .03em;
             font-size: 1.6em;
             font-weight: 300;
             margin-bottom: .3em;

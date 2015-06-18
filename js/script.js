@@ -3,7 +3,7 @@ $(document).ready(function() {
 		currentRow = false;
 
 	function checkNav() {
-		var scroll = $(document).scrollTop() + 30,
+		var scroll = $(document).scrollTop() + 60,
 			buyRow = $('#buy').position().top,
 			shippingRow = $('#shipping').position().top,
 			galleryRow = $('#gallery').position().top,
@@ -47,7 +47,7 @@ $(document).ready(function() {
 	checkNav();
 
 	setTimeout(function() {
-		checkNav();		
+		checkNav();
 	}, 500);
 
 	$('.slider').slick({

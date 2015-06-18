@@ -7,7 +7,7 @@
 
 // Our variables
 $base-font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-$secondary-font-family: 'Swiss911BT-Compressed', Arial;
+$secondary-font-family: 'Swiss721BT-BoldCondensed', Arial;
 $base-font-size:   	16px;
 $small-font-size:  	$base-font-size * 0.875;
 $base-line-height: 	1.5;
@@ -45,14 +45,6 @@ $on-laptop:        800px;
         @content;
     }
 }
-
-// Fonts
-// Swiss911
-@import url("//hello.myfonts.net/count/2e6529");
-
-@font-face {font-family: 'Swiss911BT-Compressed';src: url('fonts/2E6529_0_0.eot');src: url('fonts/2E6529_0_0.eot?#iefix') format('embedded-opentype'),url('fonts/2E6529_0_0.woff2') format('woff2'),url('fonts/2E6529_0_0.woff') format('woff'),url('fonts/2E6529_0_0.ttf') format('truetype');}
-
-
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
